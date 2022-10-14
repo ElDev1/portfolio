@@ -12,6 +12,7 @@ export const Nav = () => {
         h='70px' 
         bg='#171723'
         justify='center'
+        position='fixed'
     >
         <Flex justify='space-between' w='70%'>
             <Flex>
@@ -20,6 +21,7 @@ export const Nav = () => {
                     alt='logo'
                     width='70px'
                     height='5px'
+                    
                 />
                 <Center w='100px'>
                     <Text color='white'>Home</Text>
