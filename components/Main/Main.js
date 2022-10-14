@@ -1,10 +1,12 @@
 //import "./styles.css";
 import Sphere from "./icons";
+import { Nav } from "./Nav";
 
 export const Main = () => {
   return (
-    <div className="App">
-    <Sphere />
+    <div>
+      <Nav />
+      <Sphere />
     </div> 
   )
 }
