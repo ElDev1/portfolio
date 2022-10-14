@@ -1,7 +1,8 @@
-import { Box, Flex, Text, Center } from "@chakra-ui/react"
+import { Flex, Text, Center } from "@chakra-ui/react"
 import { AiFillLinkedin } from 'react-icons/ai'
 import { GrMail } from 'react-icons/gr'
-import { AiFillGithub } from 'react-icons/ai' 
+import { AiFillGithub } from 'react-icons/ai'
+import Image from 'next/image'
 
 export const Nav = () => {
   return (
@@ -14,6 +15,12 @@ export const Nav = () => {
     >
         <Flex justify='space-between' w='70%'>
             <Flex>
+                <Image 
+                    src='/images/logo.png'
+                    alt='logo'
+                    width='70px'
+                    height='5px'
+                />
                 <Center w='100px'>
                     <Text color='white'>Home</Text>
                 </Center>
@@ -27,11 +34,11 @@ export const Nav = () => {
                     <Text color='white'>Contact</Text>
                 </Center>
             </Flex>
-            <Flex>
-                <Center>
+            <Flex pr='5px'>
+                <Center mr='8px'>
                     <AiFillLinkedin style={{fontSize: '30px', color:'lightblue'}}></AiFillLinkedin>
                 </Center>
-                <Center>
+                <Center mr='8px'>
                     <GrMail style={{fontSize: '30px', color:'red'}}></GrMail>
                 </Center>
                 <Center>
