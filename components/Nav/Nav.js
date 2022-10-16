@@ -1,4 +1,4 @@
-import { Flex, Text, Center } from "@chakra-ui/react"
+import { Flex, Text, Center, Fade, Button } from "@chakra-ui/react"
 import { AiFillLinkedin } from 'react-icons/ai'
 import { GrMail } from 'react-icons/gr'
 import { AiFillGithub } from 'react-icons/ai'
@@ -23,22 +23,74 @@ export const Nav = () => {
                     height='5px'
                     
                 />
-                <Center w='100px'>
-                    <Text color='white'>Home</Text>
+                <Center w='98px'>
+                    <a href="#">
+                        <Text 
+                            color='white'
+                            p='1'
+                            transition='0.4s'
+                            _hover={{
+                                backgroundColor:'rgba(255,255,255,0.2)',
+                                borderRadius:'10px',
+                                transition:'0.4s'
+                            }}
+                        >
+                            Home
+                        </Text>
+                    </a>
                 </Center>
-                <Center w='100px'>
-                    <Text color='white'>About</Text>
+                <Center w='98px'>
+                    <a href="#">
+                        <Text 
+                            color='white'
+                            p='1'
+                            transition='0.4s'
+                            _hover={{
+                                backgroundColor:'rgba(255,255,255,0.2)',
+                                borderRadius:'10px',
+                                transition:'0.4s'
+                            }}
+                        >
+                            About
+                        </Text>
+                    </a>
                 </Center>
-                <Center w='100px'>
-                    <Text color='white'>Projects</Text>
+                <Center w='98px'>
+                    <a href="#">
+                        <Text 
+                            color='white'
+                            p='1'
+                            transition='0.4s'
+                            _hover={{
+                                backgroundColor:'rgba(255,255,255,0.2)',
+                                borderRadius:'10px',
+                                transition:'0.4s'
+                            }}
+                        >
+                            Projects
+                        </Text>
+                    </a>
                 </Center>
-                <Center w='100px'>
-                    <Text color='white'>Contact</Text>
+                <Center w='98px'>
+                    <a href="#">
+                        <Text 
+                            color='white'
+                            p='1'
+                            transition='0.4s'
+                            _hover={{
+                                backgroundColor:'rgba(255,255,255,0.2)',
+                                borderRadius:'10px',
+                                transition:'0.4s'
+                            }}
+                        >
+                            Contact
+                        </Text>
+                    </a>
                 </Center>
             </Flex>
             <Flex pr='5px'>
                 <Center mr='8px'>
-                    <AiFillLinkedin style={{fontSize: '30px', color:'lightblue'}}></AiFillLinkedin>
+                    <AiFillLinkedin _hover={{fontSize:'35px'}} style={{fontSize: '30px', color:'lightblue'}}></AiFillLinkedin>
                 </Center>
                 <Center mr='8px'>
                     <GrMail style={{fontSize: '30px', color:'red'}}></GrMail>
