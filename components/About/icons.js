@@ -92,7 +92,7 @@ const Sphere = () => {
     // weightSize: number
     // weightSizeMax: number | null
     // weightSizeMin: number | null
-    //wheelZoom: true
+       wheelZoom: false
     // zoom: number
     // zoomMax: number
     // zoomMin: number
