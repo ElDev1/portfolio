@@ -13,6 +13,7 @@ export const Nav = () => {
         bg='#171723'
         justify='center'
         position='fixed'
+        style={{zIndex: 1}}
     >
         <Flex justify='space-between' w='70%'>
             <Flex>

@@ -23,115 +23,117 @@ export const About = () => {
                     <Text color='white' p='2' fontWeight='bold'>
                         My Tech Stack: 
                     </Text>
-                    <Flex>
-                        <Button 
-                            style={{cursor: 'default'}} 
-                            mr='10px'
-                            _hover={{
-                                color:'white',
-                                backgroundColor: 'rgba(255,255,255,0)',
-                                border: 'white solid 1px'
-                            }} 
-                            colorScheme='orange' 
-                            leftIcon={<AiFillHtml5 />}>
-                            HTML 5
-                        </Button>
-                        <Button 
-                            style={{cursor: 'default'}} 
-                            mr='10px'
-                            _hover={{
-                                color:'white',
-                                backgroundColor: 'rgba(255,255,255,0)',
-                                border: 'white solid 1px'
-                            }} 
-                            colorScheme='telegram' 
-                            leftIcon={<DiCss3 />}>
-                            CSS 3
-                        </Button>
-                        <Button 
-                            style={{cursor: 'default'}} 
-                            mr='10px'
-                            _hover={{
-                                color:'white',
-                                backgroundColor: 'rgba(255,255,255,0)',
-                                border: 'white solid 1px'
-                            }} 
-                            colorScheme='yellow' 
-                            leftIcon={<SiJavascript />}>
-                            Javascript
-                        </Button>
-                        <Button 
-                            style={{cursor: 'default'}} 
-                            _hover={{
-                                backgroundColor: 'rgba(255,255,255,0)',
-                                border: 'white solid 1px'
-                            }} 
-                            colorScheme='twitter' 
-                            leftIcon={<FaReact />}>
-                            React
-                        </Button>
-                    </Flex>
-                    <Flex>
-                        <Button
-                            mt='10px'
-                            mr='10px' 
-                            style={{cursor: 'default'}} 
-                            _hover={{
-                                backgroundColor: 'rgba(255,255,255,0)',
-                                border: 'white solid 1px'
-                            }} 
-                            colorScheme='green' 
-                            leftIcon={<FaNodeJs />}>
-                            Node
-                        </Button>
-                        <Button
-                            mt='10px'
-                            mr='10px' 
-                            style={{cursor: 'default'}} 
-                            _hover={{
-                                backgroundColor: 'rgba(255,255,255,0)',
-                                color:'white',
-                                border: 'white solid 1px'
-                            }} 
-                            colorScheme='gray' 
-                            leftIcon={<SiExpress />}>
-                            Express
-                        </Button>
-                        <Button
-                            mt='10px'
-                            mr='10px'
-                            color='white'
-                            bg='#425F57' 
-                            style={{
-                                cursor: 'default'
-                                
-                            }} 
-                            _hover={{
-                                backgroundColor: 'rgba(255,255,255,0)',
-                                color:'white',
-                                border: 'white solid 1px'
-                            }} 
-                            leftIcon={<DiMongodb />}>
-                            MongoDb
-                        </Button>
-                        <Button
-                            mt='10px'
-                            mr='10px'
-                            color='black'
-                            bg='#D8D9CF' 
-                            style={{
-                                cursor: 'default'
-                                
-                            }} 
-                            _hover={{
-                                backgroundColor: 'rgba(255,255,255,0)',
-                                color:'white',
-                                border: 'white solid 1px'
-                            }} 
-                            leftIcon={<BiGitBranch />}>
-                            Git
-                        </Button>
-                    </Flex>
+                    <Box ml='5px'>
+                        <Flex>
+                            <Button 
+                                style={{cursor: 'default'}} 
+                                mr='10px'
+                                _hover={{
+                                    color:'white',
+                                    backgroundColor: 'rgba(255,255,255,0)',
+                                    border: 'white solid 1px'
+                                }} 
+                                colorScheme='orange' 
+                                leftIcon={<AiFillHtml5 />}>
+                                HTML 5
+                            </Button>
+                            <Button 
+                                style={{cursor: 'default'}} 
+                                mr='10px'
+                                _hover={{
+                                    color:'white',
+                                    backgroundColor: 'rgba(255,255,255,0)',
+                                    border: 'white solid 1px'
+                                }} 
+                                colorScheme='telegram' 
+                                leftIcon={<DiCss3 />}>
+                                CSS 3
+                            </Button>
+                            <Button 
+                                style={{cursor: 'default'}} 
+                                mr='10px'
+                                _hover={{
+                                    color:'white',
+                                    backgroundColor: 'rgba(255,255,255,0)',
+                                    border: 'white solid 1px'
+                                }} 
+                                colorScheme='yellow' 
+                                leftIcon={<SiJavascript />}>
+                                Javascript
+                            </Button>
+                            <Button 
+                                style={{cursor: 'default'}} 
+                                _hover={{
+                                    backgroundColor: 'rgba(255,255,255,0)',
+                                    border: 'white solid 1px'
+                                }} 
+                                colorScheme='twitter' 
+                                leftIcon={<FaReact />}>
+                                React
+                            </Button>
+                        </Flex>
+                        <Flex>
+                            <Button
+                                mt='10px'
+                                mr='10px' 
+                                style={{cursor: 'default'}} 
+                                _hover={{
+                                    backgroundColor: 'rgba(255,255,255,0)',
+                                    border: 'white solid 1px'
+                                }} 
+                                colorScheme='green' 
+                                leftIcon={<FaNodeJs />}>
+                                Node
+                            </Button>
+                            <Button
+                                mt='10px'
+                                mr='10px' 
+                                style={{cursor: 'default'}} 
+                                _hover={{
+                                    backgroundColor: 'rgba(255,255,255,0)',
+                                    color:'white',
+                                    border: 'white solid 1px'
+                                }} 
+                                colorScheme='gray' 
+                                leftIcon={<SiExpress />}>
+                                Express
+                            </Button>
+                            <Button
+                                mt='10px'
+                                mr='10px'
+                                color='white'
+                                bg='#425F57' 
+                                style={{
+                                    cursor: 'default'
+                                    
+                                }} 
+                                _hover={{
+                                    backgroundColor: 'rgba(255,255,255,0)',
+                                    color:'white',
+                                    border: 'white solid 1px'
+                                }} 
+                                leftIcon={<DiMongodb />}>
+                                MongoDb
+                            </Button>
+                            <Button
+                                mt='10px'
+                                mr='10px'
+                                color='black'
+                                bg='#D8D9CF' 
+                                style={{
+                                    cursor: 'default'
+                                    
+                                }} 
+                                _hover={{
+                                    backgroundColor: 'rgba(255,255,255,0)',
+                                    color:'white',
+                                    border: 'white solid 1px'
+                                }} 
+                                leftIcon={<BiGitBranch />}>
+                                Git
+                            </Button>
+                        </Flex>
+                    </Box>
             </Box>
             <Box w='500px'>
                 <Sphere /> 

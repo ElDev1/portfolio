@@ -8,12 +8,6 @@ const colors = {
     800: '#153e75',
     700: '#2a69ac',
   },
-  body: {
-    margin: 0,
-    padding: 0,
-    minHeight: "100vh",
-    background: "#171c29"
-  },
 }
 
 const theme = extendTheme({ colors })

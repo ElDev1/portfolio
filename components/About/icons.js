@@ -22,11 +22,11 @@ const Sphere = () => {
     clickToFront: 500,
     // decel: number
     depth: 1,
-    // dragControl: boolean
+    // dragControl: false
     // dragThreshold: number
-    // fadeIn: number
+    // fadeIn: number,
     // freezeActive: boolean
-    // freezeDecel: boolean
+    // freezeDecel: false,
     // frontSelect: boolean
     // hideTags: boolean
     // imageAlign: 'centre' | 'left' | 'right'
@@ -44,7 +44,7 @@ const Sphere = () => {
     // minBrightness: number
     // minSpeed: number
     // minTags: 0 - 200
-    // noMouse: boolean
+    // noMouse: boolean,
     // noSelect: boolean
     // noTagsMessage: string
     // offsetX: number
@@ -66,7 +66,7 @@ const Sphere = () => {
     // radiusZ: number
     // repeatTagsTags: 0 - 64
     reverse: true,
-    // scrollPause: boolean
+    // scrollPause: true,
     // shadow: string
     // shadowBlur: number
     // shadowOffset: [number,number] | number[]
