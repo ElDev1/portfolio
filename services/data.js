@@ -17,6 +17,12 @@ export const data = [
         id: 2,
         title: 'title',
         image: Roma,
+        description: 'description asdadasdawdawdawdawdadwadwsdasdasdasdasdasdsadasdadssadasdasdad'
+    },
+    {
+        id: 3,
+        title: 'title',
+        image: Roma,
         description: 'description'
     },
     {
@@ -24,5 +30,17 @@ export const data = [
         title: 'title',
         image: Roma,
         description: 'description'
-    }
+    },
+    {
+        id: 3,
+        title: 'title',
+        image: Roma,
+        description: 'description'
+    },
+    {
+        id: 3,
+        title: 'title',
+        image: Roma,
+        description: 'description'
+    },    
 ]

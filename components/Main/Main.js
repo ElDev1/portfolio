@@ -15,8 +15,9 @@ export const Main = () => {
             <Flex mt='35px'>
               <Button
                 _hover={{
-                  backgroundColor:'white',
-                  color: 'black'
+                  backgroundImage: 'linear-gradient(to right, #7928CA , #ffbe65)',
+                  color: 'white',
+                  border: 'hidden'
                 }}
                 color='white'
                 variant='outline'
@@ -27,8 +28,8 @@ export const Main = () => {
               <Button
                 _hover={{
                   color:'white',
-                  backgroundColor:'#171c29',
-                  border: 'solid white 1px'
+                  backgroundImage: 'linear-gradient(to right, #7928CA , #ffbe65)',
+                  //border: 'solid white 1px'
                 }}
               >
                 {`Let's talk`}
