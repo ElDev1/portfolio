@@ -18,14 +18,6 @@ export const Projects = () => {
                   gap: '30px'
                 }}
               >
-                {/* <Box bg='white' p='100px' mb='10px' w='100%' d="inline-block">Hola</Box>
-                <Box bg='white' p='100px' mb='10px' w='100%' d="inline-block">Hola</Box>
-                <Box bg='white' p='100px' mb='10px' w='100%' d="inline-block">Hola</Box>
-                <Box bg='white' p='100px' mb='10px' w='100%' d="inline-block">Hola</Box>
-                <Box bg='white' p='100px' mb='10px' w='100%' d="inline-block">Hola</Box>
-                <Box bg='white' p='140px' mb='10px' w='100%' d="inline-block">Hola</Box>
-                <Box bg='white' p='150px' mb='10px' w='100%' d="inline-block">Hola</Box> */}
-                
                 {
                   data.map(item => <Card key={item.id} title={item.title} image={item.image} description={item.description}/>)
                 }
