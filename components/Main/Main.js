@@ -38,7 +38,7 @@ export const Main = () => {
           </Box>
             <Box
             >
-                <Image 
+                <Image
                   src='/images/icons.png'
                   alt='devi'
                   width='400px'

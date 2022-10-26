@@ -1,6 +1,6 @@
 import { Box, Flex, Divider, Heading, Grid, GridItem, Text, SimpleGrid } from "@chakra-ui/react"
 import { Card } from "./Card"
-import { data } from '../../services/data'
+import data from '../../services/data.json'
 
 export const Projects = () => {
   return (

@@ -1,4 +1,4 @@
-import { Flex, Text, Center, Fade, Button } from "@chakra-ui/react"
+import { Flex, Text, Center, Link } from "@chakra-ui/react"
 import { AiFillLinkedin } from 'react-icons/ai'
 import { GrMail } from 'react-icons/gr'
 import { AiFillGithub } from 'react-icons/ai'
@@ -29,7 +29,7 @@ export const Nav = () => {
                         <Text 
                             color='white'
                             p='1'
-                            transition='0.4s'
+                            transition='0.02s'
                             _hover={{
                                 backgroundColor:'rgba(255,255,255,0.2)',
                                 borderRadius:'10px',
@@ -91,13 +91,17 @@ export const Nav = () => {
             </Flex>
             <Flex pr='5px'>
                 <Center mr='8px'>
-                    <AiFillLinkedin _hover={{fontSize:'35px'}} style={{fontSize: '30px', color:'lightblue'}}></AiFillLinkedin>
+                    <Link href="https://www.linkedin.com/in/devi-amaolo-773135161/" isExternal >
+                        <AiFillLinkedin _hover={{fontSize:'35px'}} style={{fontSize: '30px', color:'lightblue'}}></AiFillLinkedin>
+                    </Link>
                 </Center>
                 <Center mr='8px'>
                     <GrMail style={{fontSize: '30px', color:'red'}}></GrMail>
                 </Center>
                 <Center>
-                    <AiFillGithub style={{fontSize: '30px', color:'white'}}></AiFillGithub>
+                    <Link href="https://github.com/ElDev1" isExternal>
+                        <AiFillGithub style={{fontSize: '30px', color:'white'}}></AiFillGithub>
+                    </Link>
                 </Center>
             </Flex>
         </Flex>
