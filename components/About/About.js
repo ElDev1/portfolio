@@ -8,10 +8,17 @@ import Sphere from "./icons";
 
 export const About = () => {
   return (
-    <Box>
-
-        <Flex w='100%' h='100vh' justify='center'>
-            <Flex w='70%' align='center' justify='space-between'>
+    <Box
+        h='100vh' 
+        maxWidth='1400px' 
+        as='section'
+        position='relative'
+        margin='0 auto'
+        p='0 30px'
+        display='flex'
+        alignItems='center'
+    >
+        <Flex w='70%' align='center' justify='space-between'>
             <Box> 
                 <Heading bgGradient='linear(to-r, #7928CA, #ffbe65)' bgClip='text' fontSize='60px'>
                     About Me
@@ -135,14 +142,15 @@ export const About = () => {
                         </Flex>
                     </Box>
             </Box>
-            <Box w='500px'>
+            <Box 
+                w='400px'
+                position='absolute'
+                right='0'
+                top='30%'
+            >
                 <Sphere /> 
             </Box>
             </Flex>
-        </Flex>
-        <Flex justify='center'>
-            <Divider w='70%' bg='gray' /> 
-        </Flex>
     </Box>
   )
 }

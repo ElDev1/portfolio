@@ -5,9 +5,17 @@ import Image from "next/image";
 export const Main = () => {
   
   return (
-    <Box>
-      <Flex w='100%' h='100vh' justify='center'>
-        <Flex w='70%' align='center' justify='space-between'>
+      <Box 
+        h='100vh' 
+        maxWidth='1400px' 
+        as='section'
+        position='relative'
+        margin='0 auto'
+        p='0 30px'
+        display='flex'
+        alignItems='center'
+      >
+        <Flex flexDirection='column' zIndex='0'>
           <Box >
             <Heading color='white' fontSize='30px'>{`Hello I'm`}</Heading>
             <Heading color='white' fontSize='50px'>Devi Amaolo</Heading>
@@ -36,20 +44,20 @@ export const Main = () => {
               </Button>
             </Flex>
           </Box>
-            <Box
-            >
-                <Image
-                  src='/images/icons.png'
-                  alt='devi'
-                  width='400px'
-                  height='400px'
-                />
-            </Box>
+          <Box
+            position='absolute'
+            right='0'
+            top='33%'
+          >
+              <Image
+                src='/images/icons.png'
+                alt='devi'
+                width='350px'
+                height='350px'
+              />
+          </Box>
         </Flex>
-      </Flex>
-      <Flex justify='center'>
-        <Divider w='70%' bg='gray' /> 
-      </Flex>
-    </Box>
+      </Box>
+  
   )
 }

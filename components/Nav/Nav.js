@@ -1,4 +1,4 @@
-import { Flex, Text, Center, Link } from "@chakra-ui/react"
+import { Flex, Text, Center, Link, Box } from "@chakra-ui/react"
 import { AiFillLinkedin } from 'react-icons/ai'
 import { GrMail } from 'react-icons/gr'
 import { AiFillGithub } from 'react-icons/ai'
@@ -6,22 +6,25 @@ import Image from 'next/image'
 
 export const Nav = () => {
   return (
-    <Flex 
-        as='nav'
-        w='100%' 
-        h='70px' 
+    <Box 
+        as='header' 
+        top='0' 
         bg='#171723'
-        justify='center'
-        position='fixed'
-        style={{zIndex: 1}}
+        position='sticky'
+        zIndex='2'
     >
-        <Flex justify='space-between' w='70%'>
+        <Flex 
+            maxWidth='1400px'
+            h={16}
+            justifyContent='space-between' 
+            m='0 auto'
+        >
             <Flex>
                 <Image 
                     src='/images/logo.png'
                     alt='logo'
                     width='70px'
-                    height='5px'
+                    height='55px'
                     
                 />
                 <Center w='98px'>
@@ -105,6 +108,6 @@ export const Nav = () => {
                 </Center>
             </Flex>
         </Flex>
-    </Flex>
+    </Box>
   )
 }
