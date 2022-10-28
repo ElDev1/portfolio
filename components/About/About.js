@@ -17,6 +17,7 @@ export const About = () => {
         p='0 30px'
         display='flex'
         alignItems='center'
+        id='about'
     >
         <Flex w='70%' align='center' justify='space-between'>
             <Box> 

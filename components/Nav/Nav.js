@@ -1,8 +1,9 @@
-import { Flex, Text, Center, Link, Box } from "@chakra-ui/react"
+import { Flex, Text, Center, Box } from "@chakra-ui/react"
 import { AiFillLinkedin } from 'react-icons/ai'
 import { GrMail } from 'react-icons/gr'
 import { AiFillGithub } from 'react-icons/ai'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export const Nav = () => {
   return (
@@ -27,8 +28,8 @@ export const Nav = () => {
                     height='55px'
                     
                 />
-                <Center w='98px'>
-                    <a href="#">
+                <Center w='98px' cursor='pointer'>
+                    <Link href="/">
                         <Text 
                             color='white'
                             p='1'
@@ -41,10 +42,10 @@ export const Nav = () => {
                         >
                             Home
                         </Text>
-                    </a>
+                    </Link>
                 </Center>
-                <Center w='98px'>
-                    <a href="#">
+                <Center w='98px' cursor='pointer'>
+                    <Link href="/#about">
                         <Text 
                             color='white'
                             p='1'
@@ -57,10 +58,10 @@ export const Nav = () => {
                         >
                             About
                         </Text>
-                    </a>
+                    </Link>
                 </Center>
-                <Center w='98px'>
-                    <a href="#">
+                <Center w='98px' cursor='pointer'>
+                    <Link href="/#project" scroll={false}>
                         <Text 
                             color='white'
                             p='1'
@@ -73,9 +74,9 @@ export const Nav = () => {
                         >
                             Projects
                         </Text>
-                    </a>
+                    </Link>
                 </Center>
-                <Center w='98px'>
+                <Center w='98px' cursor='pointer'>
                     <a href="#">
                         <Text 
                             color='white'
@@ -93,15 +94,15 @@ export const Nav = () => {
                 </Center>
             </Flex>
             <Flex pr='5px'>
-                <Center mr='8px'>
+                <Center mr='8px' cursor='pointer'>
                     <Link href="https://www.linkedin.com/in/devi-amaolo-773135161/" isExternal >
-                        <AiFillLinkedin _hover={{fontSize:'35px'}} style={{fontSize: '30px', color:'lightblue'}}></AiFillLinkedin>
+                        <AiFillLinkedin _hover={{color:'white'}} fontSize='30px' color='lightblue'></AiFillLinkedin>
                     </Link>
                 </Center>
                 <Center mr='8px'>
                     <GrMail style={{fontSize: '30px', color:'red'}}></GrMail>
                 </Center>
-                <Center>
+                <Center cursor='pointer'>
                     <Link href="https://github.com/ElDev1" isExternal>
                         <AiFillGithub style={{fontSize: '30px', color:'white'}}></AiFillGithub>
                     </Link>

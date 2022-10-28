@@ -4,7 +4,7 @@ import data from '../../services/data.json'
 
 export const Projects = () => {
   return (
-    <Box>
+    <Box id='project'>
       <Flex maxWidth='1400px' m='0 auto' justify='center'>
         <Flex align='center' mt='55px' direction='column'>
             <Heading as='h1' fontSize='60px'bgGradient='linear(to-r, #7928CA, #ffbe65)' bgClip='text' >My Projects</Heading>
@@ -19,7 +19,7 @@ export const Projects = () => {
                 }}
               >
                 {
-                  data.map(item => <Card key={item.id} title={item.title} image={item.image} description={item.description}/>)
+                  data.map(item => <Card key={item.id} id={item.id} title={item.title} image={item.image} description={item.description}/>)
                 }
               </Box>
         </Flex>
