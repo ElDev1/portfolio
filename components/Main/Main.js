@@ -1,5 +1,5 @@
 //import "./styles.css";
-import { Divider, Box, Button, Flex, Heading} from "@chakra-ui/react";
+import { Box, Button, Flex, Heading} from "@chakra-ui/react";
 import Image from "next/image";
 
 export const Main = () => {
@@ -24,7 +24,6 @@ export const Main = () => {
               <Button
                 _hover={{
                   backgroundImage: 'linear-gradient(to right, #7928CA , #ffbe65)',
-                  color: 'white',
                   border: 'hidden'
                 }}
                 color='white'
@@ -37,7 +36,6 @@ export const Main = () => {
                 _hover={{
                   color:'white',
                   backgroundImage: 'linear-gradient(to right, #7928CA , #ffbe65)',
-                  //border: 'solid white 1px'
                 }}
               >
                 {`Let's talk`}

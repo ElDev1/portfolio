@@ -49,7 +49,7 @@ export const Nav = () => {
                         <Text 
                             color='white'
                             p='1'
-                            transition='0.4s'
+                            transition='0.2s'
                             _hover={{
                                 backgroundColor:'rgba(255,255,255,0.2)',
                                 borderRadius:'10px',

@@ -1,12 +1,10 @@
-import { Box, Flex, Heading, Text, UnorderedList } from "@chakra-ui/react";
+import { Box, Flex, Heading, Button, ListItem, Text, UnorderedList } from "@chakra-ui/react";
 import Head from "next/head";
 import Image from "next/image";
 import data from '../../services/data.json'
-
+import { projectIcon } from "../../utils/projectIcon";
 
 const InfoProject = ( { dataProject } ) => {
-    console.log(dataProject)
-
     return(
         <>
             <Head>
@@ -24,7 +22,6 @@ const InfoProject = ( { dataProject } ) => {
                 <Flex 
                     w='70%' 
                     align='center'
-                    //justify='space-around'
                     direction='column'
                 >
                     <Box 
@@ -46,19 +43,57 @@ const InfoProject = ( { dataProject } ) => {
                         />
                     </Box>
                     <Box color='white' w='600px'>
-                        <Heading mb='30px' textDecoration='underline #ffb494'>
+                        <Heading mb='30px' display='inline-block' borderBottom=' solid #ffb494'>
                             {dataProject.title}
                         </Heading>
                         <Box mb='30px'>
-                            <Text fontWeight='bold' mb='5px'>Description</Text>
+                            <Text fontWeight='bold' display='inline-block' borderBottom=' solid #ffb494' mb='10px'>Description</Text>
                             <Text>
                                 {dataProject.description}
                             </Text>
                         </Box>
-                        <Text fontWeight='bold'>Tech stack:</Text>
-                        <UnorderedList>
-
+                        <Text fontWeight='bold' mb='10px'>Tech stack:</Text>
+                        <UnorderedList  
+                            m='0px' 
+                            color='white' 
+                            display='inline-flex'
+                            gap='15px'
+                            border='1px solid #3c404b;'
+                            boxShadow='2px 2px 10px rgba(106, 130, 251, 0.1)'
+                            rounded='10px'
+                            p='10px'
+                        >
+                            {dataProject.techStack.map((technology, i) => (
+                                <ListItem display='flex' key={i} >
+                                    {projectIcon(technology)}
+                                    {technology}
+                                </ListItem>
+                            ))}
                         </UnorderedList>
+                        <Flex mt='35px'>
+                            <Button
+                                _hover={{
+                                backgroundImage: 'linear-gradient(to right, #7928CA , #ffbe65)',
+                                color: 'white',
+                                border: 'hidden'
+                                }}
+                                color='white'
+                                variant='outline'
+                                mr='15px' 
+                            >
+                                Github
+                            </Button>
+                            <Button
+                                color='black'
+                                bg='white'
+                                _hover={{
+                                color:'white',
+                                backgroundImage: 'linear-gradient(to right, #7928CA , #ffbe65)',
+                                }}
+                            >
+                                {`Live Demo`}
+                            </Button>
+                        </Flex>
                     </Box>
                 </Flex>
             </Flex>
