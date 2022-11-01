@@ -1,8 +1,8 @@
 import { Box, Flex, Divider, Heading, Grid, GridItem, Text, SimpleGrid } from "@chakra-ui/react"
 import { Card } from "./Card"
-import data from '../../services/data.json'
 
-export const Projects = () => {
+
+export const Projects = ({ data }) => {
   return (
     <Box id='project'>
       <Flex maxWidth='1400px' m='0 auto' justify='center'>
@@ -19,7 +19,7 @@ export const Projects = () => {
                 }}
               >
                 {
-                  data.map(item => <Card key={item.id} id={item.id} title={item.title} image={item.image} description={item.description}/>)
+                  data.map(item => <Card key={item.id} id={item.id} title={item.title} image={item.image} shortDescription={item.shortDescription}/>)
                 }
               </Box>
         </Flex>

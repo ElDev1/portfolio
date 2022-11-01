@@ -1,8 +1,9 @@
 import { Box, Heading, Text } from '@chakra-ui/react'
 import Image from 'next/image'
 import Link from 'next/link'
+import image from '../../public/images/logo.png'
 
-export const Card = ({id,title,image,description}) => {
+export const Card = ({id,title,image,shortDescription}) => {
   return (
     <Link href={`/projects/${id}`}>
       <Box
@@ -13,23 +14,18 @@ export const Card = ({id,title,image,description}) => {
           transition:'0.4s',
           textDecoration: 'underline'
       }}
-        style={{
-          transition: 'all .2s ease-in-out',
-          position: 'relative',
-          height: 'auto',
-          width: '100%',
-          display: 'inline-block',
-          marginBottom: '30px',
-          color: 'white',
-          zIndex: 0,
-        }}
+        transition='all .2s ease-in-out'
+        position='relative'
+        height='auto'
+        width='100%'
+        display='inline-block'
+        marginBottom='30px'
+        color='white'
+        zIndex='0'
       >
         <Box 
           border='1px solid #3c404b;'
-          style={{
-            boxShadow: '2px 2px 10px rgba(106, 130, 251, 0.1)',
-      
-          }}
+          boxShadow= '2px 2px 10px rgba(106, 130, 251, 0.1)'
           rounded='10px'
         >
           <Box overflow='hidden' rounded='10px 10px 0 0'>
@@ -40,6 +36,8 @@ export const Card = ({id,title,image,description}) => {
                 height='80px'
                 objectFit='cover'
                 layout='responsive'
+                placeholder='blur'
+                blurDataURL={image}
             />
           </Box>
           <Box as='section'>
@@ -55,7 +53,7 @@ export const Card = ({id,title,image,description}) => {
               pl='15px'
               color='#6b7c96'
             >
-              {description}
+              {shortDescription}
             </Text>
             <Text
               p='15px'

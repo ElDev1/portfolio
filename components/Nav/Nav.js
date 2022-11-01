@@ -45,7 +45,7 @@ export const Nav = () => {
                     </Link>
                 </Center>
                 <Center w='98px' cursor='pointer'>
-                    <Link href="/#about">
+                    <Link href="/#about" scroll={false}>
                         <Text 
                             color='white'
                             p='1'
@@ -77,7 +77,7 @@ export const Nav = () => {
                     </Link>
                 </Center>
                 <Center w='98px' cursor='pointer'>
-                    <a href="#">
+                    <Link href="/#contact" scroll={false}>
                         <Text 
                             color='white'
                             p='1'
@@ -90,22 +90,54 @@ export const Nav = () => {
                         >
                             Contact
                         </Text>
-                    </a>
+                    </Link>
                 </Center>
             </Flex>
             <Flex pr='5px'>
                 <Center mr='8px' cursor='pointer'>
-                    <Link href="https://www.linkedin.com/in/devi-amaolo-773135161/" isExternal >
-                        <AiFillLinkedin _hover={{color:'white'}} fontSize='30px' color='lightblue'></AiFillLinkedin>
-                    </Link>
+                    <Box
+                        _hover={{
+                            backgroundColor:'rgba(255,255,255,0.2)',
+                            borderRadius:'10px',
+                            transition:'0.01s'
+                        }}
+                    >
+                        <Link href="https://www.linkedin.com/in/devi-amaolo-773135161/" isExternal >
+                            <a>
+                                <AiFillLinkedin _hover={{color:'white'}} fontSize='30px' color='lightblue'></AiFillLinkedin>
+                            </a>
+                        </Link>
+                    </Box>
                 </Center>
-                <Center mr='8px'>
-                    <GrMail style={{fontSize: '30px', color:'red'}}></GrMail>
+                <Center mr='8px' cursor='pointer'>
+                    <Box
+                        _hover={{
+                            backgroundColor:'rgba(255,255,255,0.2)',
+                            borderRadius:'10px',
+                            transition:'0.01s'
+                        }}
+                    >
+                        <Link href="mailto: deviamaolo@gmail.com">
+                            <a>
+                                <GrMail style={{fontSize: '30px', color:'red'}}></GrMail>
+                            </a>
+                        </Link>
+                    </Box>
                 </Center>
                 <Center cursor='pointer'>
-                    <Link href="https://github.com/ElDev1" isExternal>
-                        <AiFillGithub style={{fontSize: '30px', color:'white'}}></AiFillGithub>
-                    </Link>
+                    <Box
+                        _hover={{
+                            backgroundColor:'rgba(255,255,255,0.2)',
+                            borderRadius:'10px',
+                            transition:'0.01s'
+                        }}
+                    >
+                        <Link href="https://github.com/ElDev1" isExternal>
+                            <a>
+                                <AiFillGithub style={{fontSize: '30px', color:'white'}}></AiFillGithub>
+                            </a>
+                        </Link>
+                    </Box>
                 </Center>
             </Flex>
         </Flex>

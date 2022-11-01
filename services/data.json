@@ -5,7 +5,9 @@
         "image": "/images/roma.jpg",
         "shortDescription": "Social Network Landing created using React and Material UI",
         "description": "Social Network Landing created using React and Material UI",
-        "techStack": ["React","Styled components","CSS"]
+        "techStack": ["React","Styled components","CSS"],
+        "github": "",
+        "demo": ""
     }
       
 ]

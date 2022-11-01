@@ -5,7 +5,7 @@ import { RiArticleLine } from 'react-icons/ri'
 
 export const Contact = () => {
   return (
-    <Box id='project'>
+    <Box id='contact'>
     <Flex h='100vh' maxWidth='1400px' m='0 auto' justify='center' align='center'>
       <Flex align='center' mt='55px' direction='column'>
           <Box
@@ -25,9 +25,11 @@ export const Contact = () => {
                 }}
                 color='white'
                 variant='outline'
-                mt='15px' 
+                mt='15px'
               >
-                  Send a Message!
+                  <Link href="mailto: deviamaolo@gmail.com">
+                    Send a Message!
+                  </Link>
             </Button>
             <Flex 
                 mt='25px'
