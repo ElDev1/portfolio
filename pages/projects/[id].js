@@ -8,7 +8,7 @@ const InfoProject = ( { dataProject } ) => {
     return(
         <>
             <Head>
-                <title>{dataProject.title || "project" } | Devi</title>
+                <title>{`${dataProject.title || "project"}  | Devi`}</title>
             </Head>
             <Flex 
                 as='main'

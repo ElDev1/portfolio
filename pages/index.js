@@ -12,7 +12,7 @@ export default function Home({ data }) {
   return (
     <Box bg='#171c29'>
       <Head>
-        <title>Devi Amaolo</title>
+        <title>{`Devi Amaolo`}</title>
       </Head>
       <main>
         <Main />
