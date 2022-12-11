@@ -20,22 +20,22 @@ export const About = () => {
         alignItems='center'
     >
         <Flex align='center' justify='space-between'>
-            <Box> 
+            <Box w={['100%','100%','50%','50%']}> 
                 <Heading bgGradient='linear(to-r, #7928CA, #ffbe65)' bgClip='text' fontSize='60px'>
                     About Me
                 </Heading>
-                    <Text color='white' p='2' w='600px'>
-                        I am a web developer and computer science student from Argentina passionate about coding and software in general, now focused on Frontend development using mainly React.js and Next.js but I also have knowledge working with
-                        backend technologies.
+                    <Text color='white' p='2' >
+                       { 'Hi! I am a web developer and I am passionate about everything related to software, computer science and code. I am currently focused on Frontend Development using mostly React and Nextjs, take a look at my technology stack :) '}
                     </Text>
                     <Text color='white' p='2' fontWeight='bold'>
                         My Tech Stack: 
                     </Text>
                     <Box ml='5px'>
-                        <Flex>
+                        <Flex flexWrap='wrap'>
                             <Button 
                                 style={{cursor: 'default'}} 
                                 mr='10px'
+                                mb='10px'
                                 _hover={{
                                     color:'white',
                                     backgroundColor: 'rgba(255,255,255,0)',
@@ -74,15 +74,14 @@ export const About = () => {
                                 _hover={{
                                     backgroundColor: 'rgba(255,255,255,0)',
                                     border: 'white solid 1px'
-                                }} 
+                                }}
+                                mr='10px' 
                                 colorScheme='twitter' 
                                 leftIcon={<FaReact />}>
                                 React
                             </Button>
-                        </Flex>
-                        <Flex>
+                        
                             <Button
-                                mt='10px'
                                 mr='10px' 
                                 style={{cursor: 'default'}} 
                                 _hover={{
@@ -140,7 +139,7 @@ export const About = () => {
                                 leftIcon={<BiGitBranch />}>
                                 Git
                             </Button>
-                        </Flex>
+                        </Flex>           
                     </Box>
             </Box>
             <Box 
@@ -148,6 +147,7 @@ export const About = () => {
                 position='absolute'
                 right='0'
                 top='30%'
+                display={["none","none","none","block"]}
             >
                 <Sphere /> 
             </Box>

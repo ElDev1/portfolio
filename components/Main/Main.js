@@ -1,6 +1,7 @@
 //import "./styles.css";
 import { Box, Button, Flex, Heading} from "@chakra-ui/react";
 import Image from "next/image";
+import Link from 'next/link';
 
 export const Main = () => {
   
@@ -19,7 +20,7 @@ export const Main = () => {
           <Box >
             <Heading color='white' fontSize='30px'>{`Hello I'm`}</Heading>
             <Heading color='white' fontSize='50px'>Devi Amaolo</Heading>
-            <Heading bgGradient='linear(to-r, #7928CA, #ffbe65)' bgClip='text' fontSize='60px'>Frontend Developer</Heading>
+            <Heading bgGradient='linear(to-r, #7928CA, #ffbe65)' bgClip='text' fontSize='60px'>Web Developer</Heading>
             <Flex mt='35px'>
               <Button
                 _hover={{
@@ -38,20 +39,23 @@ export const Main = () => {
                   backgroundImage: 'linear-gradient(to right, #7928CA , #ffbe65)',
                 }}
               >
-                {`Let's talk`}
+                  <Link href="/#contact" scroll={false}>
+                    {`Let's talk`}
+                  </Link>
               </Button>
             </Flex>
           </Box>
           <Box
             position='absolute'
             right='0'
-            top='33%'
+            top='22%'
+            display={["none","none","none","block"]}
           >
               <Image
-                src='/images/icons.png'
+                src='/images/computer.gif'
                 alt='devi'
-                width='350px'
-                height='350px'
+                width='550px'
+                height='550px'
               />
           </Box>
         </Flex>

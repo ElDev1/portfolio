@@ -79,7 +79,10 @@ const InfoProject = ( { dataProject } ) => {
                                 }}
                                 color='white'
                                 variant='outline'
-                                mr='15px' 
+                                mr='15px'
+                                onClick={() => {
+                                    window.open(`${dataProject.github}`, '_blank');
+                                }}
                             >
                                 Github
                             </Button>
@@ -90,8 +93,11 @@ const InfoProject = ( { dataProject } ) => {
                                 color:'white',
                                 backgroundImage: 'linear-gradient(to right, #7928CA , #ffbe65)',
                                 }}
+                                onClick={() => {
+                                    window.open(`${dataProject.demo}`, '_blank');
+                                }}
                             >
-                                {`Live Demo`}
+                                Live Demo
                             </Button>
                         </Flex>
                     </Box>

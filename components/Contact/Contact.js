@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Image, Button } from "@chakra-ui/react"
+import { Box, Flex, Heading, Image, Button,Text } from "@chakra-ui/react"
 import { Link } from "@chakra-ui/react"
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { RiArticleLine } from 'react-icons/ri'
@@ -18,6 +18,7 @@ export const Contact = () => {
                 height='130px'
               />
             <Heading color='white'>{`Let's Connect`}</Heading>
+            <Text color="#6b7c96">deviamaolo@gmail.com</Text>
             <Button
                 _hover={{
                   backgroundImage: 'linear-gradient(to right, #7928CA , #ffbe65)',

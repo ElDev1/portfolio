@@ -1,13 +1,63 @@
 [
     {
         "id": "1",
-        "title": "title",
-        "image": "/images/roma.jpg",
-        "shortDescription": "Social Network Landing created using React and Material UI",
-        "description": "Social Network Landing created using React and Material UI",
-        "techStack": ["React","Styled components","CSS"],
-        "github": "",
-        "demo": ""
+        "title": "Spotify Clone",
+        "image": "/images/spotify.png",
+        "shortDescription": "App created to listen to songs from your favorite artists using the shazam API....",
+        "description": "App created to listen to songs from your favorite artists using the shazam API. you can play music, filter songs or artists by genre and view song details such as lyrics.",
+        "techStack": ["React","React Router","Tailwind","Redux"],
+        "github": "https://github.com/ElDev1/spotify-clone",
+        "demo": "https://spotify-clon12312.netlify.app//"
+    },
+    {
+        "id": "2",
+        "title": "Memories",
+        "image": "/images/memories.png",
+        "shortDescription": "Memories is a CRUD app to share memories of moments you would like to remember...",
+        "description": "Memories is a CRUD app to share memories of moments you would like to remember such as a trip, a party with friends or the day you adopted your pet. features of the app include a global view to see all the memories created by users and a view to manage the ones you have created.",
+        "techStack": ["React","React Router","Tailwind","Formik","Firebase"],
+        "github": "https://github.com/ElDev1/memories",
+        "demo": "https://memories-eldev1.vercel.app/"
+    },
+    {
+        "id": "5",
+        "title": "Shop app",
+        "image": "/images/yardsale.png",
+        "shortDescription": "The project is a yard sale page that consumes an API to get different products...",
+        "description": "this app was created as a project for Platzi's React course. The project is a yard sale page that consumes an API to get different products where you can save the ones you would like to buy.",
+        "techStack": ["React","React Router","CSS","Context API"],
+        "github": "https://github.com/ElDev1/shop_app",
+        "demo": "https://shop-app-three.vercel.app/"
+    },
+    {
+        "id": "4",
+        "title": "Movies",
+        "image": "/images/movies.png",
+        "shortDescription": "Movies is a challenge from Alkemy. the application displays a list of movies...",
+        "description": "Movies is a challenge from Alkemy. The application displays a list of movies where you can see details of each one and add it to a list of favorites. You can search for movies using a search bar.",
+        "techStack": ["React","React Router","Bootstrap"],
+        "github": "https://github.com/ElDev1/movie-app",
+        "demo": "https://movie-app-eldev1.vercel.app/"
+    },
+    {
+        "id": "6",
+        "title": "Social network main page",
+        "image": "/images/socialNetwork.png",
+        "shortDescription": "Social Network main page created using React and Material UI...",
+        "description": "This application was created to practice styling using Styled components and Material UI with custom themes. The page is responsive design and has dark mode implemented.",
+        "techStack": ["React","Material UI","Styled components"],
+        "github": "https://github.com/ElDev1/social_network_landing",
+        "demo": "https://social-network-landing.vercel.app/"
+    },
+    {
+        "id": "7",
+        "title": "Go Scrum",
+        "image": "/images/goScrum.png",
+        "shortDescription": "Project management application for scrum methodology...",
+        "description": "Project management application for scrum methodology. You can manage authentication, different roles and permissions for creating, editing and deleting tasks assigned by different teams.",
+        "techStack": ["React","React Router","Material UI","Redux","Formik"],
+        "github": "https://github.com/ElDev1/go-scrum",
+        "demo": "https://eldev1.github.io/go-scrum/"
     }
       
 ]

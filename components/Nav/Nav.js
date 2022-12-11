@@ -19,6 +19,7 @@ export const Nav = () => {
             h={16}
             justifyContent='space-between' 
             m='0 auto'
+            display={["none","none","flex","flex"]}
         >
             <Flex>
                 <Image 
