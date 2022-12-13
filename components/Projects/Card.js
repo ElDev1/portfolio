@@ -38,6 +38,7 @@ export const Card = ({id,title,image,shortDescription}) => {
                 layout='responsive'
                 placeholder='blur'
                 blurDataURL={image}
+                quality={40}
             />
           </Box>
           <Box as='section'>

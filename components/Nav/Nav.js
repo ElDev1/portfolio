@@ -1,9 +1,9 @@
-import { Flex, Text, Center, Box } from "@chakra-ui/react"
+import { Flex, Text, Center, Box, Link } from "@chakra-ui/react"
 import { AiFillLinkedin } from 'react-icons/ai'
 import { GrMail } from 'react-icons/gr'
 import { AiFillGithub } from 'react-icons/ai'
 import Image from 'next/image'
-import Link from 'next/link'
+
 
 export const Nav = () => {
   return (
@@ -104,9 +104,7 @@ export const Nav = () => {
                         }}
                     >
                         <Link href="https://www.linkedin.com/in/devi-amaolo-773135161/" isExternal >
-                            <a>
                                 <AiFillLinkedin _hover={{color:'white'}} fontSize='30px' color='lightblue'></AiFillLinkedin>
-                            </a>
                         </Link>
                     </Box>
                 </Center>
@@ -119,9 +117,7 @@ export const Nav = () => {
                         }}
                     >
                         <Link href="mailto: deviamaolo@gmail.com">
-                            <a>
                                 <GrMail style={{fontSize: '30px', color:'red'}}></GrMail>
-                            </a>
                         </Link>
                     </Box>
                 </Center>
@@ -134,9 +130,7 @@ export const Nav = () => {
                         }}
                     >
                         <Link href="https://github.com/ElDev1" isExternal>
-                            <a>
                                 <AiFillGithub style={{fontSize: '30px', color:'white'}}></AiFillGithub>
-                            </a>
                         </Link>
                     </Box>
                 </Center>

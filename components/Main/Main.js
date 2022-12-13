@@ -1,7 +1,6 @@
 //import "./styles.css";
-import { Box, Button, Flex, Heading} from "@chakra-ui/react";
+import { Box, Button, Flex, Heading, Link} from "@chakra-ui/react";
 import Image from "next/image";
-import Link from 'next/link';
 
 export const Main = () => {
   
@@ -31,7 +30,7 @@ export const Main = () => {
                 variant='outline'
                 mr='15px' 
               >
-                  My CV
+                  <Link  href="https://drive.google.com/file/d/13LX2Xy08Xg27qtJgxpc89G8qplAzgBLX/view?usp=share_link" isExternal>My CV</Link>
               </Button>
               <Button
                 _hover={{
@@ -51,12 +50,14 @@ export const Main = () => {
             top='22%'
             display={["none","none","none","block"]}
           >
-              <Image
-                src='/images/computer.gif'
-                alt='devi'
-                width='550px'
-                height='550px'
-              />
+            <Image
+              src='/images/computer.gif'
+              alt='devi'
+              width='550px'
+              height='550px'
+              priority
+              quality={40}
+            />
           </Box>
         </Flex>
       </Box>
