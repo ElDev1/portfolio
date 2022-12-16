@@ -49,15 +49,12 @@ export const Main = () => {
             right='0'
             top='22%'
             display={["none","none","none","block"]}
+            width='550px'
+            height='550px'
           >
-            <Image
-              src='/images/computer.gif'
-              alt='devi'
-              width='550px'
-              height='550px'
-              priority
-              quality={40}
-            />
+            <video preload="metadata" autoPlay muted loop>
+              <source src="/images/video.mp4#t=0.5" type="video/mp4" />
+            </video>
           </Box>
         </Flex>
       </Box>
