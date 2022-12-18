@@ -26,8 +26,8 @@ const InfoProject = ( { dataProject } ) => {
                 >
                     <Box 
                         mt='100px'
-                        w='600px' 
-                        h='auto' 
+                        w={['300px','300px','600px','600px']} 
+                        h={['200px','200px','400px','400px']} 
                         overflow='hidden' 
                         rounded='10px'
                         border='10px outset violet'
@@ -42,7 +42,7 @@ const InfoProject = ( { dataProject } ) => {
                             alt={dataProject.title}
                         />
                     </Box>
-                    <Box color='white' w='600px'>
+                    <Box color='white' w={['200px','600px','600px','600px']} h='auto'>
                         <Heading mb='30px' display='inline-block' borderBottom=' solid #ffb494'>
                             {dataProject.title}
                         </Heading>
@@ -56,7 +56,7 @@ const InfoProject = ( { dataProject } ) => {
                         <UnorderedList  
                             m='0px' 
                             color='white' 
-                            display='inline-flex'
+                            display={['block','inline-flex','inline-flex','inline-flex']}
                             gap='15px'
                             border='1px solid #3c404b;'
                             boxShadow='2px 2px 10px rgba(106, 130, 251, 0.1)'
